@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["error",""],["reader","FASTX record"],["record","FASTX record"],["records","FASTX record"],["writer","Define a fastx writer"]]});
