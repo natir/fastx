@@ -1,7 +1,9 @@
 # A Fast·a·q parser 🧬 💻
 
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/natir/fastx/blob/master/LICENSE)
-![CI](https://github.com/natir/fastx/workflows/CI/badge.svg)
+[![Lints](https://github.com/natir/fastx/actions/workflows/format.yml/badge.svg)](https://github.com/natir/fastx/actions/workflows/format.yml)
+[![Test](https://github.com/natir/fastx/actions/workflows/test.yml/badge.svg)](https://github.com/natir/fastx/actions/workflows/test.yml)
+[![MSRV](https://github.com/natir/fastx/actions/workflows/msrv.yml/badge.svg)](https://github.com/natir/fastx/actions/workflows/msrv.yml)
 [![Documentation](https://github.com/natir/fastx/workflows/Documentation/badge.svg)](https://natir.github.io/fastx/fastx)
 [![CodeCov](https://codecov.io/gh/natir/fastx/branch/master/graph/badge.svg)](https://codecov.io/gh/natir/fastx)
 
