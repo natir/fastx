@@ -1,0 +1,31 @@
+[package]
+name = "fastx"
+version = "0.1.0"
+authors = ["Pierre Marijon <pierre@marijon.fr>"]
+license = "MIT"
+edition = "2021"
+rust-version = "1.56.0"
+description = "FASTX format reader and writer"
+homepage = "https://github.com/natir/fastx"
+repository = "https://github.com/natir/fastx"
+documentation = "https://natir.github.io/fastx/fastx"
+
+[dependencies]
+bstr = "0.2"
+
+[dev-dependencies]
+criterion     = "0.3"
+rand          = "0.8"
+noodles       = { version = "0.18", features = ["fasta", "fastq"]}
+
+[[bench]]
+name = "parse"
+harness = false
+
+[profile.release]
+debug = true # uncomment for profiling
+lto = 'thin'
+opt-level = 3
+overflow-checks = false
+panic = 'abort'
+incremental = false
