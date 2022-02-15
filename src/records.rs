@@ -1,4 +1,4 @@
-//! FASTX record
+//! Iterator over record
 
 /* std use */
 

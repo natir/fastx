@@ -1,4 +1,4 @@
-//! FASTX record
+//! The fastx record
 
 /* std use */
 

@@ -7,7 +7,16 @@
 [![Documentation](https://github.com/natir/fastx/workflows/Documentation/badge.svg)](https://natir.github.io/fastx/fastx)
 [![CodeCov](https://codecov.io/gh/natir/fastx/branch/master/graph/badge.svg)](https://codecov.io/gh/natir/fastx)
 
-We have different fastx parser write in rust, this one was originaly create to be include in [noodles](https://github.com/zaeleus/noodles) but it's not fit in noodles crates target.
+We have different fastx parser write in rust, this one was originaly create to be include in [noodles](https://github.com/zaeleus/noodles) but it's not fit in noodles crates target ([it's ok he convinced me](https://github.com/zaeleus/noodles/pull/73)).
+
+## Usage
+
+Add this in Cargo.toml dependency:
+```
+fastx = { git = "https://github.com/natir/fastx" }
+```
+
+No plans to add it to crates.io at this time.
 
 ## Minimum supported Rust version
 

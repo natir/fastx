@@ -1,4 +1,4 @@
-//!
+//! Define specific io error
 
 /// Error could be generate by FASTX reading and writing
 pub enum Error {

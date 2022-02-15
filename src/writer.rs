@@ -1,4 +1,4 @@
-//! Define a fastx writer
+//! The fastx writer
 
 /* std use */
 

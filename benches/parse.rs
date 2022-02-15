@@ -74,7 +74,7 @@ mod short_reads {
             })
         });
 
-        g.bench_function("fasta", |b| {
+        g.bench_function("noodles_fasta", |b| {
             b.iter(|| {
                 let mut reader = noodles::fasta::Reader::new(&input[..]);
                 for result in reader.records() {
@@ -100,7 +100,7 @@ mod short_reads {
             })
         });
 
-        g.bench_function("fastq", |b| {
+        g.bench_function("noodles_fastq", |b| {
             b.iter(|| {
                 let mut reader = noodles::fastq::Reader::new(&input[..]);
                 for result in reader.records() {
