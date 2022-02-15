@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["error",""],["reader","FASTX record"],["record","FASTX record"],["records","FASTX record"],["writer","Define a fastx writer"]]});
+initSidebarItems({"mod":[["error","Define specific io error"],["reader","The fastx reader"],["record","The fastx record"],["records","Iterator over record"],["writer","The fastx writer"]]});
