@@ -53,7 +53,7 @@ where
     }
 
     fn read_fasta(&mut self, previous_line: &[u8]) -> Option<std::io::Result<Record>> {
-        let mut record = Record::default();
+        let mut record = Record::default_fasta();
 
         if previous_line.len() <= 1 {
             return Some(Err(Error::MissingName.into()));
@@ -92,7 +92,7 @@ where
     }
 
     fn read_fastq(&mut self, previous_line: &[u8]) -> Option<std::io::Result<Record>> {
-        let mut record = Record::default();
+        let mut record = Record::default_fastq();
 
         if previous_line.len() <= 1 {
             return Some(Err(Error::MissingName.into()));

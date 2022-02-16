@@ -7,7 +7,7 @@
 /* mod declaration */
 
 /// Fastx record struct
-#[derive(Clone, Debug, Eq, PartialEq, Default)]
+#[derive(Clone, Debug, Default, Eq, PartialEq)]
 pub struct Record {
     name: Vec<u8>,
     description: Option<Vec<u8>>,
@@ -63,5 +63,25 @@ impl Record {
 
     pub fn fastq2fasta(&mut self) {
         self.quality = None
+    }
+
+    pub(crate) fn default_fasta() -> Self {
+        Self {
+            name: Vec::with_capacity(256),
+            description: Some(Vec::with_capacity(256)),
+            second_description: None,
+            sequence: Vec::with_capacity(256),
+            quality: None,
+        }
+    }
+
+    pub(crate) fn default_fastq() -> Self {
+        Self {
+            name: Vec::with_capacity(256),
+            description: Some(Vec::with_capacity(256)),
+            second_description: Some(Vec::with_capacity(256)),
+            sequence: Vec::with_capacity(256),
+            quality: Some(Vec::with_capacity(256)),
+        }
     }
 }
